@@ -13,6 +13,10 @@
 }
 
 
+.product__rating {
+    display: flex;
+}
+
 .product > img {
     max-height: 200px;
     width: 100%;
@@ -35,4 +39,11 @@
 .product__info {
     height: 100px;
     margin-bottom: 15px;
+}
+
+.product__title {
+    overflow: hidden;
+    font-size: 17px;
+    max-height: 48px;
+    display: block;
 }
