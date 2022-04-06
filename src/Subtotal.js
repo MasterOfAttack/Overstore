@@ -9,6 +9,7 @@ function Subtotal() {
         renderText={(value) =>(
             <>
             <p>
+              {/* part of the homework */}
                 Subtotal ({0} items): 
                 <strong> {value}</strong>
             </p>
@@ -18,43 +19,15 @@ function Subtotal() {
             </>
         )}
         decimalScale={2}
-        value={0}
+        value={0} // part of the homework
         displayType={"text"}
         thousandSeparator={true}
         prefix={"$"}
         />
+
+        <button>Proceed to Checkout</button>
     </div>
   )
 }
-
-
-// return (
-//     <div className="subtotal">
-//         <CurrencyFormat
-//         renderText={(value) =>(
-//             <>
-//             <p>
-//                 Subtotal ({0} items):
-//                 <strong> {value}</strong>
-//             </p>
-//             <small className="subtotal__gift">
-//                 <input type="checkbox" />
-//                 This order contains a gift
-//             </small>
-//             </>
-//         )}
-//         decimalScale={2}
-//         value={0}
-//         displayType={"text"}
-//         thousandSeperator={true}
-//         prefix={"$"}
-//         />
-
-//         <button>Proceed to checkout</button>
-
-//     </div>
-//   )
-// }
-
 
 export default Subtotal
